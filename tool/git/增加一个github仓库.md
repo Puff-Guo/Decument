@@ -19,7 +19,11 @@
 4 添加远程仓库地址
 git remote add origin git@github.com:Puff-Guo/Decument.git,命令添加远程仓库地址。
 
-5 推送资源到远程仓库
+5 拉取远程仓库到本地
+git pull origin master,如果出现fatal: refusing to merge unrelated histories错误，则加上--allow-unrelated-histories,允许合并不相关的历史，这是由于目前本地仓库和远程仓库不是同一个仓库。
+[拉取仓库图片]
+
+6 推送资源到远程仓库
 git push -u origin master 命令，推送资源到远程仓库。-u 参数用于第一次推送时候创建一个上传流（upstream），以后推送不需要该参数。
 [推送修改到仓库图片]
 
